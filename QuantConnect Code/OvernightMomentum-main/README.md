@@ -1,0 +1,14 @@
+# Overnight Momentum Trading
+Recent research examined the difference in excess stock returns based on when the trade is carried out. Specifically, the authors decomposed the abnormal returns of selected strategies into two components: overnight and intraday. Eventually, they tested four potential individual strategies; stocks were sorted either according to past one-month overnight returns or according to intraday returns, and both sorting strategies’ performance was tested on intraday and overnight trading. The same sorting and trading period led to an economically and statistically significant positive excess return. Conversely, different sorting and trading period (e.g. sorting based on intraday returns and trading overnight) produced considerable negative returns (statistically significant as well). From what is essentially two momentum and two short-term reversal strategies, all of them showing higher returns than basic momentum, the highest monthly excess return of 3.47% (and outstanding annualized Sharpe ratio of 4.39) was achieved by overnight momentum; therefore we will further describe this strategy (although we recommend taking a look at the other three as well). The higher return, however, comes at the cost of significant trading costs due to daily rebalancing.
+
+## Fundamental Reason
+In general, the momentum effect in stocks arises from investors’ irrationality leading to an underreaction to the news. The reason that momentum tends to be stronger overnight is, as the authors suggest, in institutional trading activity. Based on their empirical evidence, institutions mostly trade intraday, as opposed to individual investors, and, on average, trade against momentum.
+
+## Simple Trading Strategy
+The investment universe consists of stocks listed at NYSE, AMEX, and NASDAQ, whose daily close-to-close price data are available at the CRSP database, and volume-weighted average price data are available at TAQ database. The open price is obtained as the volume-weighted average price in the first half-hour of trading. The formula used to calculate overnight returns is on pages number 7 and 8 of the paper. At the end of each month, the investor sorts stocks into deciles based on their month-1 one-month overnight returns. Then the investor goes long on the top decile (winner stocks) and short on the bottom decile (loser stocks). Stocks are held only during overnight session (positions are initiated each day at close and are closed during open) Stocks in the portfolios are value-weighted.
+
+## Reference Paper
+https://personal.lse.ac.uk/loud/ATugofWar.pdf
+
+## Running the code
+Copy the contents of `OvernightMomentum-exercise.py` into Quantconnect. Fill in the redacted part of the code and run a backtest. Checking the [Quantconnect documentation](https://www.quantconnect.com/docs/v2/) is the best way to familiarise yourself with the syntax.
