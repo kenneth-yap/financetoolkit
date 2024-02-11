@@ -1,8 +1,10 @@
 # My Finance Toolkit
-Notes and Jupyter notebooks that I use to manage my own finances.
+Here are resources that I use to manage my own finances.
 
-- Savings Notebook: To forecast the compounding effect of placing money in a savings account. You can customise the number of accounts,annual interest rate, starting capital, monthly contribution and duration of compounding.
+- <a href="https://github.com/kenneth-yap/financetoolkit/tree/main/Jupyter%20Notebooks">Jupyter Notebooks</a>: To forecast the compounding effect of my money in multiple savings account and in stocks. Feel free to customise the number of accounts,annual interest rate, starting capital, monthly contribution and duration of compounding.
 
-- Stocks Notebook: This notebook is a result of a coursework in the MSc in Financial Engineering course. It extracts data from Yahoo Finance for exploratory data analysis.
+- <a href="https://github.com/kenneth-yap/financetoolkit/tree/main/Books">Books</a>: A library of resources that I will slowly (but surely) understand.
 
-I will consistently update these notebooks as I expand my portfolio and progress through my MSc. Feel free to download it for your own use!
+- <a href="https://github.com/kenneth-yap/financetoolkit/tree/main/QuantConnect%20Code">QuantConnect Code</a>: Python algorithms that I test and implement on the QuantConnect Platform. Many of which are still work in progress.
+
+I will consistently update these notebooks as I expand my portfolio and progress through my MSc in Financial Engineering. Feel free to download it for your own use!
